@@ -8,17 +8,17 @@ tag:
 
 ## Intent
 
-Execute Around idiom frees the user from certain actions that should always be executed before and 
-after the business method. A good example of this is resource allocation and deallocation leaving 
-the user to specify only what to do with the resource.
+Execute Around习语将用户从应该总是在和之前执行的某些操作中解放出来
+之后的商业方法。这方面的一个很好的例子是资源分配和再分配离开
+用户只能指定如何处理资源。
 
 ## Explanation
 
 Real-world example
 
-> A class needs to be provided for writing text strings to files. To make it easy for 
-> the user, the service class opens and closes the file automatically. The user only has to 
-> specify what is written into which file.       
+>需要提供一个类来将文本字符串写入文件。使…变得容易
+>用户，则服务类自动打开和关闭该文件。用户只需要这样做
+>指定将什么内容写入哪个文件。     
 
 In plain words
 
@@ -26,9 +26,9 @@ In plain words
 
 [Stack Overflow](https://stackoverflow.com/questions/341971/what-is-the-execute-around-idiom) says
 
-> Basically it's the pattern where you write a method to do things which are always required, e.g. 
-> resource allocation and clean-up, and make the caller pass in "what we want to do with the 
-> resource".
+> 基本上，它是一种模式，你写一个方法来做一些总是需要的事情，例如。
+>资源分配和清理，并让调用者传入“我们想要用
+>资源”。
 
 **Programmatic Example**
 

@@ -10,27 +10,28 @@ tag:
 
 ## Intent
 
-The Abstract Document design pattern is a structural design pattern that aims to provide a consistent way to handle hierarchical and tree-like data structures by defining a common interface for various document types. It separates the core document structure from specific data formats, enabling dynamic updates and simplified maintenance.
-
+抽象文档设计模式是一种结构设计模式，旨在通过为各种文档类型定义公共接口来提供一种处理分层和树状数据结构的一致方法。
+它将核心文档结构与特定的数据格式分离开来，支持动态更新和简化维护。
 ## Explanation
 
-The Abstract Document pattern enables handling additional, non-static properties. This pattern uses concept of traits to enable type safety and separate properties of different classes into set of interfaces.
+抽象文档模式支持处理额外的非静态属性。这种模式使用特征的概念来实现类型安全，并将不同类的属性分离到一组接口中。
 
 Real world example
 
->  Consider a car that consists of multiple parts. However, we don't know if the specific car really has all the parts, or just some of them. Our cars are dynamic and extremely flexible.
-
+>  考虑一辆由多个部件组成的汽车。
+> 然而，我们不知道特定的汽车是否真的拥有所有的零件，或者只是其中的一些。我们的汽车是动态的，非常灵活。
+> 
 In plain words
 
-> Abstract Document pattern allows attaching properties to objects without them knowing about it.
-
+> 抽象文档模式允许在对象不知道的情况下将属性附加到对象。
 Wikipedia says
 
 > An object-oriented structural design pattern for organizing objects in loosely typed key-value stores and exposing the data using typed views. The purpose of the pattern is to achieve a high degree of flexibility between components in a strongly typed language where new properties can be added to the object-tree on the fly, without losing the support of type-safety. The pattern makes use of traits to separate different properties of a class into different interfaces.
 
 **Programmatic Example**
 
-Let's first define the base classes `Document` and `AbstractDocument`. They basically make the object hold a property map and any amount of child objects.
+让我们首先定义基类' Document '和' AbstractDocument '。
+它们让对象拥有一个属性映射和任意数量的子对象。
 
 ```java
 public interface Document {

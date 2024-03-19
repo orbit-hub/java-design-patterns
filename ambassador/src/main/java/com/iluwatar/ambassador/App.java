@@ -39,6 +39,7 @@ package com.iluwatar.ambassador;
  * <p>In this example, we will the ({@link ServiceAmbassador}) class represents the ambassador while
  * the
  * ({@link RemoteService}) class represents a remote application.
+ * todo
  */
 public class App {
 

@@ -9,17 +9,17 @@ tag:
 
 ## Intent
 
-Provide a unified interface to a set of interfaces in a subsystem. Facade defines a higher-level 
-interface that makes the subsystem easier to use.
+为子系统中的一组接口提供统一的接口。Facade定义了一个更高的级别
+接口，使子系统更易于使用。
 
 ## Explanation
 
 Real-world example
 
-> How does a goldmine work? "Well, the miners go down there and dig gold!" you say. That is what you 
-> believe because you are using a simple interface that goldmine provides on the outside, internally 
-> it has to do a lot of stuff to make it happen. This simple interface to the complex subsystem is a 
-> facade.
+> 金矿是如何运作的?你会说:“矿工去那里挖金子!”这就是你
+> 我相信，因为你正在使用一个简单的接口，goldmine提供了在外部，内部
+> 它需要做很多事情才能实现。这个到复杂子系统的简单接口是一个
+> 外观。
 
 In plain words
 

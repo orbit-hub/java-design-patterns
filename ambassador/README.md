@@ -9,8 +9,7 @@ tag:
 
 ## Intent
 
-Provide a helper service instance on a client and offload common functionality away from a shared resource.
-
+在客户端上提供一个助手服务实例，并从共享资源中卸载公共功能。
 ## Also known as
 
 * Sidecar
@@ -19,9 +18,9 @@ Provide a helper service instance on a client and offload common functionality a
 
 Real world example
 
-> A remote service has many clients accessing a function it provides. The service is a legacy application and is 
-> impossible to update. Large numbers of requests from users are causing connectivity issues. New rules for request 
-> frequency should be implemented along with latency checks and client-side logging.
+>一个远程服务有很多客户端访问它提供的一个功能。该服务是遗留应用程序，并且
+>无法更新。来自用户的大量请求导致连接问题。新的请求规则
+>频率应该与延迟检查和客户端日志一起实现。
 
 In plain words
 

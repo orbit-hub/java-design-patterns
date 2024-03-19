@@ -9,18 +9,17 @@ tag:
 
 ## Intent
 
-The Active Object design pattern provides a safe and reliable way to implement asynchronous behavior in concurrent systems. It achieves this by encapsulating tasks within objects that have their own thread and message queue. This separation keeps the main thread responsive and avoids issues like direct thread manipulation or shared state access.
-
+活动对象设计模式为在并发系统中实现异步行为提供了一种安全可靠的方式。
+它通过将任务封装在具有自己的线程和消息队列的对象中来实现这一点。
+这种分离使主线程保持响应性，并避免了诸如直接线程操作或共享状态访问之类的问题。
 ## Explanation
 
-The class that implements the active object pattern will contain a self-synchronization mechanism without using 'synchronized' methods.
-
+实现活动对象模式的类将包含不使用“synchronized”方法的自同步机制。
 Real-world example
 
->The Orcs are known for their wildness and untameable soul. It seems like they have their own thread of control based on previous behavior.
-
-To implement a creature that has its own thread of control mechanism and expose its API only and not the execution itself, we can use the Active Object pattern.
-
+>兽人以其野性和不可驯服的灵魂而闻名。似乎他们有自己的控制线程基于之前的行为。
+> 
+要实现一个具有自己的线程控制机制的生物，并且只公开其API而不公开其执行本身，我们可以使用活动对象模式。
 
 **Programmatic Example**
 

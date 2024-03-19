@@ -25,7 +25,7 @@
 package com.iluwatar.activeobject;
 
 /**
- * An implementation of the ActiveCreature class.
+ * ActiveCreature类的实现。
  * @author Noam Greenshtain
  *
  */

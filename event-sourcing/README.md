@@ -8,17 +8,18 @@ tag:
 ---
 
 ## Intent
-Instead of storing just the current state of the data in a domain, use an append-only store to record the full series of actions taken on that data. The store acts as the system of record and can be used to materialize the domain objects. This can simplify tasks in complex domains, by avoiding the need to synchronize the data model and the business domain, while improving performance, scalability, and responsiveness. It can also provide consistency for transactional data, and maintain full audit trails and history that can enable compensating actions.
-
+不只是在域中存储数据的当前状态，而是使用仅追加存储来记录对该数据所采取的全部操作系列。存储充当记录系统，
+可用于实体化域对象。通过避免同步数据模型和业务域，这可以简化复杂域中的任务，同时提高性能、可伸缩性和响应性。
+它还可以为事务性数据提供一致性，并维护完整的审计跟踪和历史记录，从而支持补偿操作。
 ## Class diagram
 ![alt text](./etc/event-sourcing.png "Event Sourcing")
 
 ## Applicability
-Use the Event Sourcing pattern when
+在以下情况下使用事件来源模式
 
-* You need very high performance on persisting your application state even your application state has a complex relational data structure  
-* You need log of changes of your application state and ability to restore a state of any moment in time.
-* You need to debug production problems by replaying the past events. 
+*即使应用程序状态具有复杂的关系数据结构，您也需要非常高性能的持久化应用程序状态
+*您需要日志更改您的应用程序状态和能力，以恢复任何时刻的状态。
+*您需要通过重放过去的事件来调试生产问题。
 
 ## Real world examples
 

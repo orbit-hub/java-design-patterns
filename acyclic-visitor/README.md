@@ -9,19 +9,19 @@ tag:
 
 ## Intent
 
-The Acyclic Visitor pattern decouples operations from an object hierarchy, allowing you to add new operations without modifying the object structure directly.
+无循环访问者模式将操作与对象层次结构解耦，
+允许您在不直接修改对象结构的情况下添加新操作。
 
 ## Explanation
 
 Real world example
 
-> We have a hierarchy of modem classes. The modems in this hierarchy need to be visited by an external algorithm based 
-> on filtering criteria (is it Unix or DOS compatible modem). 
+> 我们有现代阶级的等级制度。在这个层次结构中的调制解调器需要访问的外部算法基于
+> 过滤条件(是Unix或DOS兼容的调制解调器)。
 
 In plain words
 
-> Acyclic Visitor allows functions to be added to existing class hierarchies without modifying the hierarchies.
-
+> 无循环访问器允许将函数添加到现有的类层次结构中，而无需修改层次结构。
 [WikiWikiWeb](https://wiki.c2.com/?AcyclicVisitor) says
 
 > The Acyclic Visitor pattern allows new functions to be added to existing class hierarchies without affecting those 

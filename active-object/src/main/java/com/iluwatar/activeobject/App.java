@@ -30,10 +30,10 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 /**
- * The Active Object pattern helps to solve synchronization difficulties without using 
- * 'synchronized' methods. The active object will contain a thread-safe data structure 
- * (such as BlockingQueue) and use to synchronize method calls by moving the logic of the method
- * into an invocator(usually a Runnable) and store it in the DSA.
+活动对象模式帮助解决同步困难，而无需使用
+*“同步”方法。活动对象将包含线程安全的数据结构
+*(如BlockingQueue)，并通过移动方法的逻辑来同步方法调用
+*转换为调用器(通常是Runnable)并将其存储在DSA中。
  * 
  * <p>In this example, we fire 20 threads to modify a value in the target class.
  */

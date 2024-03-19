@@ -25,6 +25,8 @@
 package com.iluwatar.acyclicvisitor;
 
 /**
+ *
+ * TODO
  * The Acyclic Visitor pattern allows new functions to be added to existing class hierarchies
  * without affecting those hierarchies, and without creating the dependency cycles that are inherent
  * to the GoF Visitor pattern, by making the Visitor base class degenerate

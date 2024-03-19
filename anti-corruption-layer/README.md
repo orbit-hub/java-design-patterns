@@ -10,29 +10,27 @@ tag:
 
 ## Intent
 
-Implement a façade or adapter layer between different subsystems that don't share the same semantics. 
-This layer translates requests that one subsystem makes to the other subsystem. 
-Use this pattern to ensure that an application's design is not limited by dependencies on outside subsystems. 
-This pattern was first described by Eric Evans in Domain-Driven Design.
+在不共享相同语义的不同子系统之间实现一个farade或适配器层。这一层将一个子系统发出的请求转换为另一个子系统。
+使用此模式可确保应用程序的设计不受对外部子系统的依赖关系的限制。这种模式最早是由Eric Evans在领域驱动设计中描述的。
 
 ## Explanation
 
 ### Context and problem
-Most applications rely on other systems for some data or functionality. 
-For example, when a legacy application is migrated to a modern system, 
-it may still need existing legacy resources. 
-New features must be able to call the legacy system. 
-This is especially true of gradual migrations, 
-where different features of a larger application are moved to a modern system over time.
+大多数应用程序依赖于其他系统提供某些数据或功能。
+例如，当遗留应用程序迁移到现代系统时，
+它可能仍然需要现有的遗留资源。
+新功能必须能够调用遗留系统。
+对于逐渐迁移来说尤其如此，
+随着时间的推移，大型应用程序的不同功能被转移到现代系统中。
 
-Often these legacy systems suffer from quality issues such as convoluted data schemas or obsolete APIs. 
-The features and technologies used in legacy systems can vary widely from more modern systems. 
-To interoperate with the legacy system, the new application may need to support outdated infrastructure, protocols, data models, APIs, 
-or other features that you wouldn't otherwise put into a modern application.
+通常，这些遗留系统存在质量问题，例如复杂的数据模式或过时的api。
+遗留系统中使用的特性和技术可能与更现代的系统有很大不同。
+为了与遗留系统进行互操作，新应用程序可能需要支持过时的基础设施、协议、数据模型、api、
+或者其他您不会在现代应用程序中添加的功能。
 
-Maintaining access between new and legacy systems can force the new system to adhere to at least some of the legacy system's APIs or other semantics. 
-When these legacy features have quality issues, supporting them "corrupts" what might otherwise be a cleanly designed modern application.
-Similar issues can arise with any external system that your development team doesn't control, not just legacy systems.
+维护新系统和遗留系统之间的访问可以迫使新系统至少遵守一些遗留系统的api或其他语义。
+当这些遗留特性存在质量问题时，支持它们会“破坏”原本设计干净的现代应用程序。
+类似的问题可能出现在开发团队无法控制的任何外部系统上，而不仅仅是遗留系统。
 
 ### Solution
 Isolate the different subsystems by placing an anti-corruption layer between them. 

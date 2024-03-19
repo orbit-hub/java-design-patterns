@@ -11,14 +11,14 @@ tag:
 
 ## Intent
 
-Streamline client's interactions with system's microservices by providing a single aggregation point that consolidates data and responses from multiple services. This simplifies the client's communication with the system, improving efficiency and reducing complexity.
-
+通过提供单个聚合点来整合来自多个服务的数据和响应，
+简化客户端与系统微服务的交互。这简化了客户端与系统的通信，提高了效率，降低了复杂性。
 ## Explanation
 
 Real world example
 
-> Our web marketplace needs information about products and their current inventory. It makes a call to an aggregator service, which, in turn, calls the product information and product inventory microservices, returning the combined information.
-
+> 我们的网络市场需要有关产品及其当前库存的信息。
+> 它调用聚合器服务，聚合器服务依次调用产品信息和产品库存微服务，返回组合后的信息。
 In plain words
 
 > Aggregator Microservice collects pieces of data from various microservices and returns an aggregate for processing. 

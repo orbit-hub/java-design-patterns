@@ -7,41 +7,37 @@ tag:
 ---
 
 ## Intent
-The intent of the event queue design pattern, also known as message queues, is to decouple the relationship between the 
-sender and receiver of events within a system. By decoupling the two parties, they do not interact with the event queue 
-simultaneously. Essentially, the event queue handles and processes requests in an asynchronous manner, therefore, this 
-system can be described as a first in, first out design pattern model. Event Queue is a suitable pattern if there is a 
-resource with limited accessibility (i.e. Audio or Database), however, you need to provide access to all the requests 
-which seeks this resource. Upon accessing an event from the queue, the program also removes it from the queue.
-
+事件队列设计模式(也称为消息队列)的目的是将事件队列之间的关系解耦
+系统内事件的发送者和接收者。通过解耦双方，它们不与事件队列交互
+同时进行。从本质上讲，事件队列以异步方式处理和处理请求
+系统可以被描述为一个先进先出的设计模式模型。事件队列是一个合适的模式，如果存在
+可访问性有限的资源(即音频或数据库)，但是，您需要提供对所有请求的访问
+它寻找这个资源。在从队列中访问事件时，程序也将其从队列中删除。
 ![alt text](./etc/event-queue-model.png "Event Queue Visualised")
 
 ## Explanation 
 
 Real world example
 
-> The modern emailing system is an example of the fundamental process behind the event-queue design pattern. When an email
-> is sent, the sender continues their daily tasks without the necessity of an immediate response from the receiver. 
-> Additionally, the receiver has the freedom to access and process the email at their leisure. Therefore, this process 
-> decouples the sender and receiver so that they are not required to engage with the queue at the same time.
-
+> 现代电子邮件系统是事件队列设计模式背后的基本过程的一个例子。当一封电子邮件
+> 发送后，发送方继续他们的日常工作，而不需要接收方立即响应。
+> 此外，收信人可以在闲暇时自由访问和处理电子邮件。因此，这个过程
+> 将发送方和接收方解耦，这样它们就不需要同时与队列交互。
 
 In plain words
 
-> The buffer between sender and receiver improves maintainability and scalability of a system. Event queues are typically 
-> used to organise and carry out interprocess communication (IPC).
+>发送方和接收方之间的缓冲区提高了系统的可维护性和可扩展性。事件队列通常是用于组织和执行进程间通信(IPC)。
 
 Wikipedia says
 
-> Message queues (also known as event queues) implement an asynchronous communication pattern between two or more processes/
->threads whereby the sending and receiving party do not need to interact with the queue at the same time.
-
+> 消息队列(也称为事件队列)实现两个或多个进程之间的异步通信模式
+> 线程，即发送方和接收方不需要同时与队列交互。
 
 Key drawback
 
-> As the event queue model decouples the sender-receiver relationship - this means that the event-queue design pattern is
-> unsuitable for scenarios in which the sender requires a response. For example, this is a prominent feature within online 
-> multiplayer games, therefore, this approach require thorough consideration.
+> 由于事件队列模型解耦了发送方-接收方关系，这意味着事件队列设计模式是
+> 不适用于发送方需要响应的场景。例如，这是在线中的一个突出功能
+> 因此，在多人游戏中，这种方法需要深思熟虑。
 
 **Programmatic Example**
 

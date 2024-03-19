@@ -14,16 +14,14 @@ Wrapper
 
 ## Intent
 
-The Adapter pattern converts the interface of a class into another interface that clients expect, enabling compatibility.
-
+Adapter模式将类的接口转换为客户端期望的另一个接口，从而实现兼容性。
 ## Explanation
 
 Real-world example
 
-> Consider that you have some pictures on your memory card and you need to transfer them to your computer. To transfer them, you need some kind of adapter that is compatible with your computer ports so that you can attach a memory card to your computer. In this case card reader is an adapter.
-> Another example would be the famous power adapter; a three-legged plug can't be connected to a two-pronged outlet, it needs to use a power adapter that makes it compatible with the two-pronged outlets.
-> Yet another example would be a translator translating words spoken by one person to another
-
+> 假设你的存储卡上有一些图片，你需要将它们传输到电脑上。要传输它们，您需要某种与计算机端口兼容的适配器，以便您可以将存储卡连接到计算机上。在这种情况下，读卡器是一个适配器。
+> 另一个例子是著名的电源适配器;三条腿的插头不能连接到两个插座上，它需要使用一个电源适配器，使其与两个插座兼容。
+> 另一个例子是翻译人员将一个人说的话翻译给另一个人
 In plain words
 
 > Adapter pattern lets you wrap an otherwise incompatible object in an adapter to make it compatible with another class.

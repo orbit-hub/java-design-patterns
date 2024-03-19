@@ -14,18 +14,19 @@ Kit
 
 ## Intent
 
-The Abstract Factory design pattern provides a way to create families of related objects without specifying their concrete classes. This allows for code that is independent of the specific classes of objects it uses, promoting flexibility and maintainability.
+抽象工厂设计模式提供了一种无需指定具体类就可以创建相关对象族的方法。
+这允许代码独立于它所使用的特定对象类，从而提高灵活性和可维护性。
 
 ## Explanation
 
 Real-world example
 
-> To create a kingdom we need objects with a common theme. The elven kingdom needs an elven king, elven castle, and elven army whereas the orcish kingdom needs an orcish king, orcish castle, and orcish army. There is a dependency between the objects in the kingdom.
-
+> 要创建一个王国，我们需要有一个共同主题的物体。
+> 精灵王国需要精灵国王、精灵城堡和精灵军队，而兽人王国需要兽人国王、兽人城堡和兽人军队。
+> 王国中的物体之间存在依赖关系。
 In plain words
 
-> A factory of factories; a factory that groups the individual but related/dependent factories together without specifying their concrete classes.
-
+> 工厂的工厂;将独立但相关/依赖的工厂组合在一起而不指定它们的具体类的工厂。
 Wikipedia says
 
 > The abstract factory pattern provides a way to encapsulate a group of individual factories that have a common theme without specifying their concrete classes

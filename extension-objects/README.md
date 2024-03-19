@@ -9,27 +9,26 @@ tag:
 # Extention Objects Pattern
 
 ## Intent
-Anticipate that an object’s interface needs to be extended in the future. Additional
-interfaces are defined by extension objects.
+预期对象的接口将来需要扩展。额外的接口由扩展对象定义。
 
 ## Explanation
 Real-world example
 
-> Suppose you are developing a Java-based game for a client, and in the middle of the development process, new features are suggested. The Extension Objects pattern empowers your program to adapt to unforeseen changes with minimal refactoring, especially when integrating additional functionalities into your project.
-
+假设你正在为客户端开发一款基于java的游戏，在开发过程中，有人提出了一些新功能。
+扩展对象模式使您的程序能够以最小的重构来适应不可预见的变化，特别是在将附加功能集成到项目中时。
 In plain words
 
-> The Extension Objects pattern is used to dynamically add functionality to objects without modifying their core classes. It is a behavioural design pattern used for adding new functionality to existing classes and objects within a program. This pattern provides programmers with the ability to extend/modify class functionality without having to refactor existing source code.
-
+> 扩展对象模式用于在不修改对象的核心类的情况下动态地向对象添加功能。它是一种行为设计模式，
+> 用于向程序中的现有类和对象添加新功能。
+> 这种模式为程序员提供了扩展/修改类功能的能力，而不必重构现有的源代码。
 Wikipedia says
 
 > In object-oriented computer programming, an extension objects pattern is a design pattern added to an object after the original object was compiled. The modified object is often a class, a prototype or a type. Extension object patterns are features of some object-oriented programming languages. There is no syntactic difference between calling an extension method and calling a method declared in the type definition.
 
 **Programmatic example**
 
-The aim of utilising the Extension Objects pattern is to implement new features/functionality without having to refactor every class.
-The following examples shows utilising this pattern for an Enemy class extending Entity within a game:
-
+利用扩展对象模式的目的是实现新的特性/功能，而不必重构每个类。
+下面的例子展示了在游戏中的敌人类扩展实体中使用这种模式:
 Primary App class to execute our program from.
 ```java
 public class App {

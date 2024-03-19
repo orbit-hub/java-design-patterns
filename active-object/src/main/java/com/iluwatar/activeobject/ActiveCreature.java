@@ -32,7 +32,7 @@ import org.slf4j.LoggerFactory;
 /**
  * ActiveCreature class is the base of the active object example.
  * @author Noam Greenshtain
- *
+ * TODO
  */
 public abstract class ActiveCreature {
   
